@@ -6,7 +6,7 @@ const https = require("https")
 
 const app = express()
 
-const apiKey = "38097eca97e0f8fa639e25768aeb26d0-us12";
+const apiKey = "2844f8732e22eeac460fe77b24afc04c-us12";
 const listId = "6596cf0b7f"
 
 app.use(express.static("public"))
@@ -41,7 +41,7 @@ app.post("/", (req, res) => {
     const url = "https://us12.api.mailchimp.com/3.0/lists/6596cf0b7f"
     const options = {
         method: "POST",
-        auth: "youssef:38097eca97e0f8fa639e25768aeb26d0-us12",
+        auth: "youssef:2844f8732e22eeac460fe77b24afc04c-us12",
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
@@ -76,7 +76,8 @@ app.listen(process.env.PORT || 3000, () => {
 })
 
 //API KEY
-//38097eca97e0f8fa639e25768aeb26d0-us12
+//38097eca97e0f8fa639e25768aeb26d0-us12 : revoked
+//2844f8732e22eeac460fe77b24afc04c-us12 : last working one
 
 //LIST ID
 //6596cf0b7f
