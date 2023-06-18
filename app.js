@@ -41,7 +41,7 @@ app.post("/", (req, res) => {
     const url = "https://us12.api.mailchimp.com/3.0/lists/6596cf0b7f"
     const options = {
         method: "POST",
-        auth: "youssef:38097eca97e0f8fa639e25768aeb26d0-us1",
+        auth: "youssef:38097eca97e0f8fa639e25768aeb26d0-us12",
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
